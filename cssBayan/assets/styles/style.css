@@ -1,0 +1,79 @@
+/* _________GENERAL_SETTINGS_________ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    box-sizing: inherit;
+    /* scroll-behavior: smooth; */
+}
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+    background-color: rgb(176, 0, 0);
+    color: rgb(255, 0, 0);
+    
+}
+.bayan {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 30px 30px 30px;
+    background-color: #FFCC49;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.bayan-input {
+    display: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+}
+.bayan-title {
+    display: block;
+    cursor: pointer;
+    padding: 10px 25px;
+    margin-top: 0;
+}
+
+.bayan-item {
+    border-top: 1px solid rgba(84, 84, 84, 0.5);
+    border-bottom: 1px solid rgba(84, 84, 84, 0.5);
+    cursor: pointer;
+    transition: color .2s ease-in-out;
+    margin-bottom: 5px;
+
+}
+.bayan-item:hover {
+    color: black;
+    
+
+}
+
+
+
+.bayan-img {
+    max-width: 400px;
+    width: 100%;
+}
+.bayan-content {
+    display: none;
+    padding: 10px 25px;
+    text-align: center;
+}
+
+
+.bayan-input:checked ~ .bayan-content {
+    display: block;
+}
+
+.bayan-input:hover ~ .bayan-content {
+    display: block;
+}
+
+.bayan-input:checked ~ .bayan-title {
+    color: black;
+}
