@@ -10,13 +10,17 @@ html{
 }
 body {
     font-family: 'Arial', sans-serif;
-    font-size: 16px;
+    /* font-size: 28px; */
     line-height: 1.5;
 
     background-color: rgb(176, 0, 0);
     color: rgb(255, 0, 0);
+
+
     
 }
+
+
 .bayan {
     max-width: 800px;
     width: 100%;
@@ -25,6 +29,7 @@ body {
     background-color: #FFCC49;
     margin-top: 30px;
     margin-bottom: 30px;
+    border-radius: 30px;
 }
 .bayan-input {
     display: none;
@@ -34,7 +39,6 @@ body {
 }
 .bayan-title {
     display: block;
-    cursor: pointer;
     padding: 10px 25px;
     margin-top: 0;
 }
@@ -42,7 +46,6 @@ body {
 .bayan-item {
     border-top: 1px solid rgba(84, 84, 84, 0.5);
     border-bottom: 1px solid rgba(84, 84, 84, 0.5);
-    cursor: pointer;
     transition: color .2s ease-in-out;
     margin-bottom: 5px;
 
@@ -74,6 +77,31 @@ body {
     display: block;
 }
 
+
 .bayan-input:checked ~ .bayan-title {
     color: black;
+}
+
+
+@media (min-width: 320px) and (min-height: 568px) {
+    body {
+        font-size: 16px;
+    }
+}
+@media (min-width: 820px) and (min-height: 1180px) {
+    body {
+        font-size: 20px;
+    }
+}
+@media (min-width: 1920px) and (min-height: 1080px) {
+    body {
+        font-size: 24px;
+    }
+    .bayan-title {
+        cursor: pointer;
+    }
+    
+    .bayan-item {
+        cursor: pointer;
+    }
 }
