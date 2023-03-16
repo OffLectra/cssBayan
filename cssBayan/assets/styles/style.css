@@ -10,14 +10,9 @@ html{
 }
 body {
     font-family: 'Arial', sans-serif;
-    /* font-size: 28px; */
     line-height: 1.5;
-
     background-color: rgb(176, 0, 0);
     color: rgb(255, 0, 0);
-
-
-    
 }
 
 
@@ -48,14 +43,10 @@ body {
     border-bottom: 1px solid rgba(84, 84, 84, 0.5);
     transition: color .2s ease-in-out;
     margin-bottom: 5px;
-
 }
 .bayan-item:hover {
     color: black;
-    
-
 }
-
 
 
 .bayan-img {
@@ -67,7 +58,6 @@ body {
     padding: 10px 25px;
     text-align: center;
 }
-
 
 .bayan-input:checked ~ .bayan-content {
     display: block;
@@ -81,7 +71,6 @@ body {
 .bayan-input:checked ~ .bayan-title {
     color: black;
 }
-
 
 @media (min-width: 320px) and (min-height: 568px) {
     body {
@@ -100,7 +89,6 @@ body {
     .bayan-title {
         cursor: pointer;
     }
-    
     .bayan-item {
         cursor: pointer;
     }
